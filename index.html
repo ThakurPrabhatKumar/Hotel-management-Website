@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hotel Palm Tree</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logos-removebg-preview.png" type = "image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <img src="images/logos-removebg-preview.png" style="height: 100px;" alt="" srcset="">
+                    <span>Hotel Palm Tree</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>MOST AFFORDABLE AND COMFORTABLE PLACE TO STAY</h2>
+                <p>When You get into a hotel room, you lock the door,<br> and you know their is secerecy,there is luxury, there is fantasy.<br> There is comfort. There is reassurance</p>
+                <button type = "button" class = "head-btn">GET STARTED</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#services">Services</a></li>
+                <li><a href = "#rooms">Rooms</a></li>
+                <li><a href = "#customers">Customers</a></li>
+            </ul>
+            <button class = "btn sign-up">Sign Up Now</button>
+            <button class = "btn log-in">Log In</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>We not only have great products, we also offer value-added services to help you attract customers and serve the best they deserve. Check out our services below to know how our team of expert team can help solve your kitchen challenges.Enjoy unadulterated taste, aroma & consistency from the spice experts
+                        </p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>Hotel & Spa is a family-friendly hotel that offers a wide range of accommodation types, from rooms to suites. All this in the peaceful surroundings of our beautiful gardens, will make your time at an unforgettable holiday.Esteemed guests are welcome to relax and unwind in a quiet and elegant setting in the popular resort of and enjoy a genuine experience of leisure, pleasure, gastronomy and wellness within the premises of the resort</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>All the rooms have en-suite facilities, with its own shower and toilet facilities making it a perfect place to stay. The beds have curtains and panels ensuring that your stay is private and comfortable. The local transport links are great, we are located within 5 minutes walking distance from either or stations.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>Doorman services, lobby concierge, and receptionist services
+                            Security patrols of premises and surroundings (by foot, car, and/or bike),24/7 surveillance monitoring (CCTV, etc.)
+                            Emergency security services,Executive protection services for high profile guests and celebrities,Private investigation services for internal theft,Chaperone services for schools and large groups during hotel stays.Security consulting – risk assessment and recommendations.Security for special events at your hotel</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/super deluxe.jpeg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Super-Deluxe Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Fully Furnished and luxury rooms.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                All time food and laundary Services.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Zero disturbance.
+                            </li>
+                        </ul>
+                        <p>Super Deluxe rooms are independent rooms that come with a balcony and are a part of a building unit. These are larger than the Deluxe rooms and are meant for guests who like large and spacious rooms. A maximum of 3 guests can be accommodated in the room with an extra bed and there is ample space available for all the three guests. Like the Deluxe rooms, these are very comfortable rooms to be in with all amenities and comforts available. Being large rooms, most of them are carpeted to keep them warm in winters and with the Hot and Cold Air conditioning provided, these rooms are a blessing to be in during the winters. Size - 300 Square feet Approximately</p>
+                        <p class = "rate">
+                            <span>Rs.4000.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/luxury.jpeg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Sea-side view and a big Balcony.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                100% Secure with Most tight security.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Beautiful Infrastructure.
+                            </li>
+                        </ul>
+                        <p>Lifestyle luxury resorts are branded hotels that appeal to a guest with lifestyle or personal image in specific locations. They are typically full-service and classified as luxury. A key characteristic of lifestyle resorts is focus on providing a unique guest experience as opposed to simply providing lodging. Lifestyle luxury resorts are classified with a Five Star hotel rating depending on the country and local classification standards.</p>
+                        <p class = "rate">
+                            <span>Rs.2000.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/standard.jpeg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Standard Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Free Wi-Fi.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Welcome Cocktail, Discount on lobster dinners on the beach.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Premium drinks at the hotel restaurants and bars.
+                            </li>
+                        </ul>
+                        <p>Comfortable and spacious,hotel rooms are a great choice for couples or young families looking for resort accommodation that can sleep up to 4 guests. All Hotel Standard room types feature air-conditioning, an ensuite bathroom with a walk-in shower, a hairdryer, a TV and DVD player, a mini-fridge, and tea and coffee-making facilities.Each spacious air-conditioned room opens onto a private furnished balcony, perfect for watching the magnificent Queensland sunsets over Moreton Bay and Brisbane.</p>
+                        <p class = "rate">
+                            <span>Rs.1000.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Most Beautiful Experience Ever</h3>
+                        <p>I have stayed at dozen of hotels in (L). This was on the top of the list of best stays/experiences ever. Staff was very hospitable and there for every need of mine.Excellent property and very convenient to USC activities. Front desk staff is extremely efficient, pleasant and helpful. Property is clean and has a fantastic old time charm.Thank You so much</p>
+                        <img src = "images/martha.jpeg" alt = "customer image">
+                        <span>Martha, U.S.A</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                           
+                        </div>
+                        <h3>Cool and Comfy Living</h3>
+                        <p>Overall, I had a great experience with the staff was incredibly helpful, and the amenities were great. The room was wonderful, clean, and perfect to celebrate a birthday weekend.The staff at this property are all great! They all go above and beyond to make your stay comfortable. Please (HN) give your staff awards!</p>
+                        <img src = "images/Prabhat.jpeg" alt = "customer image">
+                        <span>Prabhat, India</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Overall liked it</h3>
+                        <p>The best hotel I’ve ever been privileged enough to stay at. Gorgeous building, and it only gets more breathtaking when you walk in. High quality rooms (there was even a tv by the shower), and high quality service. Also, they are one of few hotels that allow people under 21 to book a reservation.</p>
+                        <img src = "images/neerha.webp" alt = "customer image">
+                        <span>Neeerha, Nigeria</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>We are leading Hotel Business, all we need is our Customer's Satisfaction.We have all kinds of natural and artificial beauty and all services.So kindly give us a chance to serve you</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Any Queries?</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            137 block 24 gurgaon delhi-92, India
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +9875343273
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            palmtree203@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div align="center">
+                <h3>© 
+                    All rights reserved by Prabhat Naman and Amarnath
+                </h3>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
